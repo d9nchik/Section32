@@ -1,8 +1,5 @@
 package sample.exercise11;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class DeadLock {
