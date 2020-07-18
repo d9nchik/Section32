@@ -30,7 +30,7 @@ public class ThreadsDemo extends Application {
         Thread thread3 = new Thread(() -> {
             for (int i = 0; i < 100; i++)
                 synchronized (textArea) {
-                    textArea.setText(textArea.getText() + " " + i);
+                    textArea.appendText(" " + i);
                 }
         });
 
@@ -42,7 +42,7 @@ public class ThreadsDemo extends Application {
     private void writeCharacter(char a) {
         for (int i = 0; i < 100; i++)
             synchronized (textArea) {
-                textArea.setText(textArea.getText() + " " + a);
+                textArea.appendText(" " + a);
             }
     }
 }
